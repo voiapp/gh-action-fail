@@ -1,9 +1,9 @@
 package main
 
 import (
-	"os"
+	"os/exec"
 )
 
 func main() {
-	os.Exit(1)
+	exec.Command("terraform", "plan", "--fail")
 }
